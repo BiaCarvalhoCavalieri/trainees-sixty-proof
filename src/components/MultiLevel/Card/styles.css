@@ -1,0 +1,145 @@
+.card-container {
+  border-radius: 0.75rem;
+  border: 1px solid var(--blue-900);
+  background: var(--white-900) ;
+}
+
+.card-level {
+  color:var(--blue-900);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem; 
+  margin-bottom: 0.875rem;
+}
+
+.card-text {
+  color: var(--gray-800);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; 
+}
+.card-text_highlight {   
+  padding: 0rem 0.25rem;
+  border-radius: 1.25rem;
+  background: var(--purple-100);
+}
+
+.card-comission,.card-titles {
+  padding: 1.25rem 1.5rem
+}
+.card-comission_title {
+  color: var(--gray-800);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; 
+  letter-spacing: -0.07px;
+  padding-bottom: 0.5rem;
+  display: block;
+}
+.card-comission_value {
+  display: flex;
+  height: 3.5rem;
+  padding: 0px 0.25rem 0rem 1.25rem;
+  align-items: center;
+  gap: 0.75rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-900);
+  width: 128px;
+  background: var(--white-900);
+} 
+.card-input {
+  width: 3.5rem;
+  border: 0
+}
+
+.card-comission_text {
+  color: #474359;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; 
+  border-radius: 2rem;
+  background: #D4C4F1;
+  padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+}
+.card-comission-body {
+  gap: 1.5rem
+}
+.card-comission_text--highlight {
+  border-radius: 1.25rem;
+  background: var(--white-900);
+  padding: 0 4px;
+}
+
+.card__level-n1 {
+  margin: 1rem 0 1rem 0rem;
+  position: relative;
+}
+
+.card__level-n2::before,
+.card__level-n3::before,
+.card__level-n4::before,
+.card__level-n5::before {
+  content: '';
+  width: 24px;
+  height: 52px;
+  background-image: url('./src/assets/level-icon.svg');
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: absolute;
+  margin-left: -1.5rem;
+  margin-top: -1rem;
+
+}
+.card__level-n2 {
+  margin: 1rem 0 1rem 2rem;
+}
+.card__level-n3 {
+  margin: 1rem 0 1rem 4rem;
+}
+.card__level-n4 {
+  margin: 1rem 0 1rem 8rem;
+}
+.card__level-n5 {
+  margin: 1rem 0 2.5rem 10rem;
+}
+.card__level-n5 .card-container {
+  border: 1px solid var(--gray-100);
+}
+.cards-limited_number {
+  color: #474359;
+  text-align: center;
+  font-family: Assistant;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -3.5rem;
+}
+
+.card-delete_button {
+  height: 2.25rem;
+  color:var(--blue-900);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem; 
+  text-align: center;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  cursor: not-allowed;
+}
+.card-delete_button:hover {
+  opacity: 1;
+}

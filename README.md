@@ -16,10 +16,48 @@ Alem do layout deve ter um Mock de um pedido que passa por uma funcao e exibi as
 
 As informacoes de comissionamento por level podem ser salvas no Local Storage.
 
-### Layout
 
-https://www.figma.com/file/MJTSWLIlgVbWreZYijlydJ/Trainee-%2F-Prova?type=design&node-id=10-117&mode=design&t=PCNHUc8ZHmuLVWK1-0
+### Desenvolvimento
+<h2 align="center">
+  Trainees sixty proof 
+</h2>
 
-### OBS
+<p align="center">Esse repositório trata de uma implementação de <strong>Painel de controle Multinível</strong> </p>
 
-Prova nao focada em interface, o foco e o algoritmo de logica para calculo multi nivel.
+- O layout desenvolvido permite a visualização dos afiliados cadastrados atraves do arquivo network.js dentro da pasta db.
+- O cálculo de comissão leva em conta o valor a receber de cada pedido cadastrado no mock "ordersMock" pelo seller principal nesse caso denominado de "seller_level: 0" no arquivo network.js, o qual seria o seller que acessa o painel.
+
+
+## 🖊️ Autor
+
+- [Beatriz Carvalho](https://github.com/BiaCarvalhoCavalieri)
+
+## Layout
+
+- [Figma](https://www.figma.com/file/MJTSWLIlgVbWreZYijlydJ/Trainee-%2F-Prova?type=design&node-id=10-117&mode=design&t=PCNHUc8ZHmuLVWK1-0)
+
+
+## 💻 Tecnologias Utilizadas
+
+- React
+- TypeScript
+- JS
+- Vite
+- CSS
+
+## Instruções de uso
+
+1. Faça um clone desse repositório;
+
+2. Na pasta raiz;
+
+3. Rode o comando `npm install` para instalar as dependências;
+
+4. Rode o comando `npm run dev` para inicializar o servidor em desenvolvimento;
+
+
+## Instruções para roda calculo da comissão
+
+1. Entre na pasta db;
+
+2. Rode o comanto `node comission.js`
